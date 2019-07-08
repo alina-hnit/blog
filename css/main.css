@@ -9,12 +9,10 @@ body {
     margin: 0;
 }
 header {
-    background-color: aquamarine;
+    background-color: #C1FFFA;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-#logo {
-    margin-left: 20px;
+    margin-bottom: 20px;
 }
 .right_block {
     float: right;
@@ -41,4 +39,93 @@ nav>a {
 }
 nav>a:hover {
     color: cornflowerblue;
+}
+.content2 {
+    max-width: 1200px;
+    margin: auto;
+}
+.common-content {
+    border: solid 1px black;
+    float: left;
+}
+main {
+    width: calc(100% - 244px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 25px;
+    padding: 20px;
+}
+aside {
+    width: 150px;
+    margin-left: 20px;
+    padding: 10px;
+    height: 420px;
+}
+.article {
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+}
+.article:hover {
+    border: solid 1px green;
+    cursor: pointer;
+    background-color: #B8FCF1;
+}
+.article>img {
+    margin: 10px;
+}
+.article>h3 {
+    margin: 10px;
+}
+.article>p {
+    margin: 10px;
+}
+.article>p>span {
+    color:cornflowerblue;
+    font-weight: bold;
+}
+.article>h3>a {
+    text-decoration: none;
+    color: black;
+} 
+.article>h3>a:hover {
+    color: cornflowerblue;
+}
+.date {
+    color: cadetblue;
+    font-size: 0.9em;
+}
+.bloger_icons {
+    width: 90px;
+    margin: 20px auto;
+}
+.search>input {
+    width: 80px;
+}
+aside>h3 {
+    text-align: center;
+}
+footer {
+    margin-top: 20px;
+    background-color: #C1FFFA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.copyrights {
+    text-align: center;
+}
+.contact_info {
+    float: right;
+    margin-right: 10px;
+}
+.bottom_logo {
+    float: left;
+}
+.clearfix {
+    clear: both;
+}
+@media all and (max-width: 480px) {
+    .common-content {
+        width: 100%;
+    }
 }
